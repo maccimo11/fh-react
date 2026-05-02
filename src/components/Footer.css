@@ -1,0 +1,115 @@
+.site-footer {
+  background: #0a0a0c;
+  color: rgba(255, 255, 255, 0.72);
+  position: relative;
+}
+
+.site-footer__inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr;
+  gap: 48px;
+  padding-block: clamp(56px, 8vw, 96px);
+}
+
+.site-footer__brand img {
+  width: 140px;
+  margin-bottom: 24px;
+}
+
+.site-footer__brand p {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 36ch;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-footer h4 {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brand-red-soft);
+  margin-bottom: 18px;
+}
+
+.site-footer__nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.site-footer__nav a {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  position: relative;
+  transition: color var(--dur-fast) var(--ease-out), padding-left var(--dur-fast) var(--ease-out);
+}
+
+.site-footer__nav a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--brand-red);
+  transition: width var(--dur-fast) var(--ease-out);
+}
+
+.site-footer__nav a:hover {
+  color: #fff;
+  padding-left: 18px;
+}
+
+.site-footer__nav a:hover::before {
+  width: 12px;
+}
+
+.site-footer__contact p {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 6px;
+}
+
+.site-footer__contact .social-icons {
+  margin-top: 18px;
+}
+
+.site-footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-block: 22px;
+}
+
+.site-footer__bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.site-footer__bottom span {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.04em;
+}
+
+.site-footer__type {
+  height: 28px;
+  width: auto;
+  opacity: 0.75;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 880px) {
+  .site-footer__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

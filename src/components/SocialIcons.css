@@ -1,0 +1,63 @@
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  transition:
+    transform var(--dur-fast) var(--ease-out),
+    background var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out);
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  background: var(--brand-red);
+  border-color: var(--brand-red);
+  box-shadow: var(--shadow-red);
+}
+
+.social-icons a:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.social-icons img {
+  width: 18px;
+  height: 18px;
+  transition: filter var(--dur-fast) var(--ease-out);
+}
+
+.social-icons.is-compact a {
+  width: 36px;
+  height: 36px;
+}
+
+.social-icons.is-compact img {
+  width: 16px;
+  height: 16px;
+}
+
+.social-icons.tone-dark a {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.social-icons.tone-dark img {
+  filter: brightness(0) invert(1);
+}
+
+.social-icons.tone-dark a:hover {
+  background: var(--brand-red);
+  border-color: var(--brand-red);
+}

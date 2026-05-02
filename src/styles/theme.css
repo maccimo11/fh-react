@@ -1,0 +1,45 @@
+:root {
+  /* Brand */
+  --brand-red: #c8102e;
+  --brand-red-dark: #9a0a22;
+  --brand-red-soft: #ff3553;
+  --brand-red-glow: rgba(200, 16, 46, 0.35);
+
+  /* Neutrals */
+  --ink-900: #0e0e10;
+  --ink-700: #2a2a2e;
+  --ink-500: #5a5a62;
+  --ink-300: #b6b6bd;
+  --ink-100: #ececef;
+  --paper: #f6f6f7;
+  --paper-2: #ffffff;
+  --line: rgba(14, 14, 16, 0.08);
+  --line-strong: rgba(14, 14, 16, 0.16);
+
+  /* Effects */
+  --shadow-sm: 0 4px 12px rgba(14, 14, 16, 0.06);
+  --shadow-md: 0 14px 40px -18px rgba(14, 14, 16, 0.25);
+  --shadow-lg: 0 30px 60px -30px rgba(14, 14, 16, 0.35);
+  --shadow-red: 0 24px 50px -22px var(--brand-red-glow);
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Typography */
+  --font-display: 'Bree Serif', Georgia, serif;
+  --font-body: 'Sarala', system-ui, sans-serif;
+  --font-ui: 'Poppins', system-ui, sans-serif;
+
+  /* Layout */
+  --container: 1200px;
+  --gutter: clamp(20px, 4vw, 48px);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 200ms;
+  --dur-med: 420ms;
+  --dur-slow: 720ms;
+}
